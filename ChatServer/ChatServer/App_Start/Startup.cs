@@ -12,6 +12,7 @@ namespace ChatServer.App_Start
         public void Configuration(IAppBuilder app)
         {
             app.MapSignalR();
+            var t = new MainChatHub();
         }
     }
 }
