@@ -11,22 +11,8 @@ namespace ChatServer.Interfaces
     {
         //todo: message model
         //todo: "anweisung" model
-        public abstract void Send(int clientIdSender, int chatIdReceiver, Message message);
-        public void JoinGroup(int clientId, int groupId)
-        {
-            Task.Factory.StartNew(() =>
-            {
-                var db = new ChatEntities1();
+        public abstract Task Send(int clientIdSender, int chatIdReceiver, string message);
 
-                var userGroup = new Users_Groups
-                {
-                    Fk_User = clientId,
-                    Fk_Group = groupId
-                };
-
-                db.Users_Groups.Add(userGroup);
-                db.SaveChangesAsync();
-            }).Start();
-        }
+        public abstract Task JoinGroup(int clientId, int groupId);
     }
 }

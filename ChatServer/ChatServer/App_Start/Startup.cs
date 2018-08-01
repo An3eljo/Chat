@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Microsoft.AspNet.SignalR;
 using Microsoft.Owin;
 using Owin;
 
@@ -12,7 +13,6 @@ namespace ChatServer.App_Start
         public void Configuration(IAppBuilder app)
         {
             app.MapSignalR();
-            var t = new MainChatHub();
         }
     }
 }
