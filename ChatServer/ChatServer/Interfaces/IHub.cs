@@ -9,7 +9,7 @@ namespace ChatServer.Interfaces
 {
     public abstract class IHub : Hub
     {
-        //todo: message model
+        //todo: message model && replace
         //todo: "anweisung" model
         public abstract Task Send(int clientIdSender, int chatIdReceiver, string message);
 
