@@ -9,7 +9,9 @@ namespace ChatServer.Interfaces
 {
     public abstract class IHub : Hub
     {
-        public abstract void Send(int clientIdSender, int clientIdReceiver, string message);
+        //todo: message model
+        //todo: "anweisung" model
+        public abstract void Send(int clientIdSender, int chatIdReceiver, Message message);
         public void JoinGroup(int clientId, int groupId)
         {
             Task.Factory.StartNew(() =>
