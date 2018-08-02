@@ -12,20 +12,52 @@ namespace ChatMobile
 {
     public partial class MainPage : ContentPage
     {
+        private string _text;
+        public string Text
+        {
+            get { return _text; }
+            set
+            {
+                _text = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string _text0;
+        public string Text0
+        {
+            get { return _text0; }
+            set
+            {
+                _text0 = value;
+                OnPropertyChanged();
+            }
+        }
+
         public MainPage()
         {
+            Task.Run(() =>
+            {
+                while (true)
+                {
+                    SetTime();
+                    //await Task.Delay(50);
+                }
+            });
+            Text = "Not Connected";
             InitializeComponent();
+            ConnectionClient.Connected += (sender, args) => { Text = "Connected!"; };
             Test();
         }
 
         private void Test()
         {
-            var connection =
-                new HubConnection("http://localhost:55711/signalr/", useDefaultUrl: false);
+            Data.Instance.Client = new ConnectionClient(Data.ServerUrl, Data.HubName);
+        }
 
-            var proxy = connection.CreateHubProxy("MainChatHub");
-
-            connection.Start().Wait();
+        private void SetTime()
+        {
+            Text0 = DateTime.Now.ToString("T");
         }
     }
 }

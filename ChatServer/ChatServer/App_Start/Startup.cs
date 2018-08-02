@@ -1,12 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using ChatServer;
 using Microsoft.AspNet.SignalR;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(ChatServer.App_Start.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
-namespace ChatServer.App_Start
+namespace ChatServer
 {
     public class Startup
     {

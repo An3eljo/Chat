@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatMobile.Android", "ChatM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatMobile.iOS", "ChatMobile\ChatMobile.iOS\ChatMobile.iOS.csproj", "{14408C49-16D9-4413-A150-0EE3BA98CEF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatMobile", "ChatMobile\ChatMobile\ChatMobile.csproj", "{455D6E9F-5806-40FC-88FE-CD6FE8A19252}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatMobile", "ChatMobile\ChatMobile\ChatMobile.csproj", "{455D6E9F-5806-40FC-88FE-CD6FE8A19252}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "..\Shared\Shared.csproj", "{12D24EC2-0DA8-431C-BC30-3BE25844B10A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +135,30 @@ Global
 		{455D6E9F-5806-40FC-88FE-CD6FE8A19252}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{455D6E9F-5806-40FC-88FE-CD6FE8A19252}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{455D6E9F-5806-40FC-88FE-CD6FE8A19252}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.AppStore|Any CPU.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Release|iPhone.Build.0 = Release|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{12D24EC2-0DA8-431C-BC30-3BE25844B10A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
+using Shared;
 
 namespace ChatServer.Interfaces
 {
@@ -11,7 +12,7 @@ namespace ChatServer.Interfaces
     {
         //todo: message model && replace
         //todo: "anweisung" model
-        public abstract Task Send(int clientIdSender, int chatIdReceiver, string message);
+        public abstract Task Send(int chatIdReceiver, IMessage message);
 
         public abstract Task JoinGroup(int clientId, int groupId);
     }
