@@ -12,8 +12,10 @@ namespace ChatServer.Interfaces
     {
         //todo: message model && replace
         //todo: "anweisung" model
-        public abstract Task Send(int chatIdReceiver, IMessage message);
+        public abstract Task Send(string sendingUserPublicId, int chatIdReceiver, IMessage message);
 
-        public abstract Task JoinGroup(int clientId, int groupId);
+        public abstract Task<bool> VerifyDevice(string publicUserId, string deviceId);
+
+        public abstract Task JoinGroup(string publicClientId, string publicGroupId);
     }
 }

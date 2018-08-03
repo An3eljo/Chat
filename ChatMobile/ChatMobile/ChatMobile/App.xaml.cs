@@ -1,4 +1,8 @@
 using System;
+using System.Globalization;
+using ChatMobile.Resources;
+using ChatMobile.Views;
+using Plugin.Multilingual;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +15,10 @@ namespace ChatMobile
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+            CrossMultilingual.Current.CurrentCultureInfo = new CultureInfo("en");
+            LanguageResources.Culture = CrossMultilingual.Current.CurrentCultureInfo;
+
+			MainPage = new MainPage();  
 		}
 
 		protected override void OnStart ()

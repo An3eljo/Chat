@@ -260,15 +260,18 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Error.cs" />
+    <Compile Include="Errors\SendingError.cs" />
+    <Compile Include="Errors\Errors.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Groups.cs">
       <DependentUpon>DbChat.tt</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IError.cs" />
     <Compile Include="Interfaces\IHub.cs" />
     <Compile Include="Hubs\MainChatHub.cs" />
+    <Compile Include="Library\IdCreator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

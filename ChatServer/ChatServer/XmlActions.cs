@@ -8,7 +8,9 @@ namespace ChatServer
 {
     public static class XmlActions
     {
-        public const string ErrorMessagesPath = @"C:\Users\Administrator\Documents";
+        public const string ErrorMessagesPath = @"C:\Users\Administrator\Documents\ChatFiles\Errorlog.xml";
+        public const string UserIdsPath = @"C:\Users\Administrator\Documents\ChatFiles\Ids\UserIds.xml";
+        public const string ChatIdsPath = @"C:\Users\Administrator\Documents\ChatFiles\Ids\ChatIds.xml";
         /// <summary>
         /// Deserialize from file
         /// </summary>

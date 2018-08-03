@@ -16,6 +16,7 @@ namespace ChatServer
     {
         public int Id { get; set; }
         public bool IsMultiUserChat { get; set; }
+        public string PublicId { get; set; }
     
         public virtual Users_Groups Users_Groups { get; set; }
     }

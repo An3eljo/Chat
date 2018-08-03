@@ -16,6 +16,10 @@ namespace ChatServer
     {
         public int Id { get; set; }
         public string Username { get; set; }
+        public string PublicId { get; set; }
+        public string DeviceId { get; set; }
+        public string LastSignalrId { get; set; }
+        public Nullable<bool> IsAuthenticated { get; set; }
     
         public virtual Users_Groups Users_Groups { get; set; }
     }

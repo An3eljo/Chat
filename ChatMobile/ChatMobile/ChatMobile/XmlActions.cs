@@ -7,6 +7,8 @@ namespace ChatMobile
 {
     public static class XmlActions
     {
+        public const string SettingsFile = "settings.xml";
+
         /// <summary>
         /// Deserialize from file
         /// </summary>

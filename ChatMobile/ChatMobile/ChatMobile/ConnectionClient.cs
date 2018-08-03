@@ -16,12 +16,11 @@ namespace ChatMobile
 
         public ConnectionClient(string url, string hubName)
         {
-            ServerConnection = new HubConnection(url);
+            ServerConnection = new HubConnection(url, useDefaultUrl:false);
             Hub = ServerConnection.CreateHubProxy(hubName);
-            ServerConnection.Start();
 
 #pragma warning disable 4014
-            Connect();
+            Task.Run(async () => await Connect()).Wait();
 #pragma warning restore 4014
         }
 
@@ -32,7 +31,6 @@ namespace ChatMobile
                 await ServerConnection.Start();
                 if (ServerConnection.State == ConnectionState.Connected)
                 {
-                    await Task.Delay(5000);
                     Connected.Invoke(this, EventArgs.Empty);
                     return true;
                 }
